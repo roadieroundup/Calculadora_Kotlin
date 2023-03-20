@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/acercade"
+        android:title="@string/acercade" />
+    <item
+        android:id="@+id/salir"
+        android:title="@string/salir"/>
+    <item
+        android:id="@+id/calculadora"
+        android:title="@string/irACalculadora" />
+</menu>
