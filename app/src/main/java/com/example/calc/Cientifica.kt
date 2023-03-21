@@ -24,7 +24,7 @@ class Cientifica : CalcLayout() {
     lateinit var botonSen: Button
     lateinit var botonCos: Button
     lateinit var botonTan: Button
-    lateinit var botonExp2: Button
+    lateinit var botonRaizCuadrada: Button
     lateinit var botonExp: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,7 +59,7 @@ class Cientifica : CalcLayout() {
         botonSen = this.findViewById(R.id.button34)
         botonCos = this.findViewById(R.id.button2)
         botonTan = this.findViewById(R.id.button3)
-        botonExp2 = this.findViewById(R.id.button4)
+        botonRaizCuadrada = this.findViewById(R.id.button4)
         botonExp = this.findViewById(R.id.button5)
 
 
@@ -323,13 +323,13 @@ class Cientifica : CalcLayout() {
             }
         }
 
-        botonExp2.setOnClickListener{
+        botonRaizCuadrada.setOnClickListener{
 
             if(resultado.text.toString() == "0"){
-                resultado.setText("^2")
+                resultado.setText("sqrt(")
             }
             else {
-                resultado.setText(resultado.text.toString() + "^2")
+                resultado.setText(resultado.text.toString() + "sqrt(")
             }
         }
 

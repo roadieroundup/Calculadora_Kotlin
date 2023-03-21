@@ -40,4 +40,5 @@
     <string name="tan">tan()</string>
     <string name="x_2">x^2</string>
     <string name="potencia">^</string>
+    <string name="raizCuadrada">√</string>
 </resources>
