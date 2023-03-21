@@ -12,13 +12,18 @@
         android:theme="@style/Theme.Calc"
         tools:targetApi="31">
         <activity
+            android:name=".Cientifica"
+            android:exported="false" />
+        <activity
             android:name=".CalcLayout"
             android:exported="false" />
         <activity
             android:name=".Acercade"
-            android:exported="false"
-            android:label="@string/title_activity_acercade"
-            android:theme="@style/Theme.Calc.NoActionBar" />
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

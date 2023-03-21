@@ -58,6 +58,11 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
                 true
             }
+            R.id.cientifica->{
+                var intent = Intent(this,Cientifica::class.java)
+                startActivity(intent)
+                true
+            }
             else -> return super.onOptionsItemSelected(item)
         }
 

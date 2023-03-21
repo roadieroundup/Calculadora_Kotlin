@@ -5,7 +5,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#121212"
-    tools:context=".CalcLayout">
+    tools:context=".Cientifica">
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="76dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#292929"
+        android:text="@string/potencia"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="76dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#292929"
+        android:text="@string/x_2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button37" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="76dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#292929"
+        android:text="@string/tan"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button36" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="76dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#292929"
+        android:text="@string/cos"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/button34"
+        app:layout_constraintTop_toBottomOf="@+id/button35" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="76dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#292929"
+        android:text="@string/borrar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/button35"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button30" />
 
     <Button
         android:id="@+id/button37"
@@ -49,11 +109,11 @@
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="#292929"
-        android:text="@string/borrar"
+        android:text="@string/sen"
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/button35"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button30" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
         android:id="@+id/button33"
@@ -155,7 +215,7 @@
         android:id="@+id/button22"
         android:layout_width="76dp"
         android:layout_height="48dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="120dp"
         android:backgroundTint="#292929"
         android:text="@string/divide"
         android:textColor="#4CAF50"
@@ -216,11 +276,11 @@
         android:id="@+id/button14"
         android:layout_width="76dp"
         android:layout_height="48dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="120dp"
         android:backgroundTint="#292929"
         android:text="@string/parentesisCerrado"
         android:textColor="#4CAF50"
-        app:layout_constraintEnd_toStartOf="@+id/button15"
+        app:layout_constraintEnd_toStartOf="@+id/button22"
         app:layout_constraintStart_toEndOf="@+id/button13"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -228,7 +288,7 @@
         android:id="@+id/button13"
         android:layout_width="76dp"
         android:layout_height="48dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="120dp"
         android:backgroundTint="#292929"
         android:text="@string/parentesisAbierto"
         android:textColor="#4CAF50"
@@ -254,7 +314,7 @@
         android:id="@+id/button11"
         android:layout_width="76dp"
         android:layout_height="48dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="120dp"
         android:backgroundTint="#292929"
         android:text="@string/c"
         android:textColor="#FF5722"

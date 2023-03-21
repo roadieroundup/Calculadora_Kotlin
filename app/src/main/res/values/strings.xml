@@ -14,8 +14,8 @@
     <string name="irACalculadora">Ir a Calculadora</string>
     <string name="calculadora">Calculadora</string>
     <string name="c">C</string>
-    <string name="parentesis">()</string>
-    <string name="porcentaje">%</string>
+    <string name="parentesisAbierto">(</string>
+    <string name="parentesisCerrado">)</string>
     <string name="divide">÷</string>
     <string name="_7">7</string>
     <string name="_8">8</string>
@@ -33,4 +33,11 @@
     <string name="_0">0</string>
     <string name="punto">.</string>
     <string name="igual">=</string>
+    <string name="_0res">0</string>
+    <string name="iracalculadoracientifica">Ir a Calculadora Cientifica</string>
+    <string name="sen">sen()</string>
+    <string name="cos">cos()</string>
+    <string name="tan">tan()</string>
+    <string name="x_2">x^2</string>
+    <string name="potencia">^</string>
 </resources>

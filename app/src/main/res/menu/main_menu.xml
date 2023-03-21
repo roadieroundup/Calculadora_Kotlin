@@ -9,4 +9,7 @@
     <item
         android:id="@+id/calculadora"
         android:title="@string/irACalculadora" />
+    <item
+        android:id="@+id/cientifica"
+        android:title="@string/iracalculadoracientifica" />
 </menu>

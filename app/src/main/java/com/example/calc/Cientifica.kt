@@ -3,36 +3,33 @@ package com.example.calc
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
 import org.mariuszgromada.math.mxparser.Expression
 
-open class CalcLayout : AppCompatActivity() {
 
-    lateinit var resultado: TextView
-    lateinit var botonC: Button
-    lateinit var botonDivision: Button
-    lateinit var botonMultiplicar: Button
-    lateinit var botonRestar: Button
-    lateinit var botonSumar: Button
-    lateinit var botonIgual: Button
+//class Cientifica : AppCompatActivity() {
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//        setContentView(R.layout.activity_cientifica)
+//    }
+//}
 
-    lateinit var boton7: Button
-    lateinit var boton8: Button
-    lateinit var boton9: Button
-    lateinit var boton5: Button
-    lateinit var boton6: Button
-    lateinit var boton4: Button
-    lateinit var boton3: Button
-    lateinit var boton2: Button
-    lateinit var boton1: Button
-    lateinit var boton0: Button
+//sen, cos , tan ( ), raíz cuadrada , exponencial
 
-    lateinit var botonBorrar: Button
-    lateinit var botonPunto: Button
+class Cientifica : CalcLayout() {
+
+
+    lateinit var botonParentesisIzq: Button
+    lateinit var botonParentesisDer: Button
+
+    lateinit var botonSen: Button
+    lateinit var botonCos: Button
+    lateinit var botonTan: Button
+    lateinit var botonExp2: Button
+    lateinit var botonExp: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_calc_layout)
+        setContentView(R.layout.activity_cientifica)
 
         resultado = this.findViewById(R.id.textView2)
         botonC = this.findViewById(R.id.button11)
@@ -52,10 +49,19 @@ open class CalcLayout : AppCompatActivity() {
         boton2 = this.findViewById(R.id.button31)
         boton1 = this.findViewById(R.id.button30)
         boton0 = this.findViewById(R.id.button35)
-
-        botonBorrar = this.findViewById(R.id.button34)
-
         botonPunto = this.findViewById(R.id.button36)
+
+        botonBorrar = this.findViewById(R.id.button)
+
+        botonParentesisIzq = this.findViewById(R.id.button13)
+        botonParentesisDer = this.findViewById(R.id.button14)
+
+        botonSen = this.findViewById(R.id.button34)
+        botonCos = this.findViewById(R.id.button2)
+        botonTan = this.findViewById(R.id.button3)
+        botonExp2 = this.findViewById(R.id.button4)
+        botonExp = this.findViewById(R.id.button5)
+
 
         boton7.setOnClickListener{
             if(resultado.text.toString() == "0"){
@@ -67,7 +73,7 @@ open class CalcLayout : AppCompatActivity() {
         }
         boton8.setOnClickListener{
 
-            //resultado.setText("7")
+            
 
             if(resultado.text.toString() == "0"){
                 resultado.setText("8")
@@ -79,7 +85,7 @@ open class CalcLayout : AppCompatActivity() {
 
         boton9.setOnClickListener{
 
-            //resultado.setText("7")
+            
 
             if(resultado.text.toString() == "0"){
                 resultado.setText("9")
@@ -91,7 +97,7 @@ open class CalcLayout : AppCompatActivity() {
 
         boton6.setOnClickListener{
 
-            //resultado.setText("7")
+            
 
             if(resultado.text.toString() == "0"){
                 resultado.setText("6")
@@ -103,7 +109,7 @@ open class CalcLayout : AppCompatActivity() {
 
         boton5.setOnClickListener{
 
-            //resultado.setText("7")
+            
 
             if(resultado.text.toString() == "0"){
                 resultado.setText("5")
@@ -115,7 +121,7 @@ open class CalcLayout : AppCompatActivity() {
 
         boton4.setOnClickListener{
 
-            //resultado.setText("7")
+            
 
             if(resultado.text.toString() == "0"){
                 resultado.setText("4")
@@ -127,7 +133,7 @@ open class CalcLayout : AppCompatActivity() {
 
         boton3.setOnClickListener{
 
-            //resultado.setText("7")
+            
 
             if(resultado.text.toString() == "0"){
                 resultado.setText("3")
@@ -139,7 +145,7 @@ open class CalcLayout : AppCompatActivity() {
 
         boton2.setOnClickListener{
 
-            //resultado.setText("7")
+            
 
             if(resultado.text.toString() == "0"){
                 resultado.setText("2")
@@ -151,7 +157,7 @@ open class CalcLayout : AppCompatActivity() {
 
         boton1.setOnClickListener{
 
-            //resultado.setText("7")
+            
 
             if(resultado.text.toString() == "0"){
                 resultado.setText("1")
@@ -163,7 +169,7 @@ open class CalcLayout : AppCompatActivity() {
 
         boton0.setOnClickListener{
 
-            //resultado.setText("7")
+            
 
             if(resultado.text.toString() == "0"){
                 resultado.setText("0")
@@ -181,7 +187,7 @@ open class CalcLayout : AppCompatActivity() {
 
         botonSumar.setOnClickListener{
 
-            //resultado.setText("7")
+            
 
             if(resultado.text.toString() == "0"){
                 resultado.setText("0")
@@ -193,7 +199,7 @@ open class CalcLayout : AppCompatActivity() {
 
         botonRestar.setOnClickListener{
 
-            //resultado.setText("7")
+            
 
             if(resultado.text.toString() == "0"){
                 resultado.setText("0")
@@ -205,7 +211,7 @@ open class CalcLayout : AppCompatActivity() {
 
         botonMultiplicar.setOnClickListener{
 
-            //resultado.setText("7")
+            
 
             if(resultado.text.toString() == "0"){
                 resultado.setText("0")
@@ -217,7 +223,7 @@ open class CalcLayout : AppCompatActivity() {
 
         botonDivision.setOnClickListener{
 
-            //resultado.setText("7")
+            
 
             if(resultado.text.toString() == "0"){
                 resultado.setText("0")
@@ -229,7 +235,7 @@ open class CalcLayout : AppCompatActivity() {
 
         botonPunto.setOnClickListener{
 
-            //resultado.setText("7")
+            
 
             if(resultado.text.toString() == "0"){
                 resultado.setText("0")
@@ -241,7 +247,7 @@ open class CalcLayout : AppCompatActivity() {
 
         botonIgual.setOnClickListener{
 
-            //resultado.setText("7")
+            
 
             if(resultado.text.toString() == "0"){
                 resultado.setText("0")
@@ -252,7 +258,7 @@ open class CalcLayout : AppCompatActivity() {
                 resultado.setText(expression.calculate().toString())
             }
         }
-
+        // REVISAR
         botonBorrar.setOnClickListener{
 
             if(resultado.text.toString() == "0"){
@@ -265,7 +271,78 @@ open class CalcLayout : AppCompatActivity() {
                 resultado.setText(resultado.text.toString().substring(0, resultado.text.toString().length - 1))
             }
 
-
         }
+
+        botonParentesisIzq.setOnClickListener{
+
+            if(resultado.text.toString() == "0"){
+                resultado.setText("(")
+            }
+            else {
+                resultado.setText(resultado.text.toString() + "(")
+            }
+        }
+
+        botonParentesisDer.setOnClickListener{
+
+            if(resultado.text.toString() == "0"){
+                resultado.setText("0")
+            }
+            else {
+                resultado.setText(resultado.text.toString() + ")")
+            }
+        }
+
+        botonSen.setOnClickListener{
+
+            if(resultado.text.toString() == "0"){
+                resultado.setText("sin(")
+            }
+            else {
+                resultado.setText(resultado.text.toString() + "sin(")
+            }
+        }
+
+        botonCos.setOnClickListener{
+
+            if(resultado.text.toString() == "0"){
+                resultado.setText("cos(")
+            }
+            else {
+                resultado.setText(resultado.text.toString() + "cos(")
+            }
+        }
+
+        botonTan.setOnClickListener{
+
+            if(resultado.text.toString() == "0"){
+                resultado.setText("tan(")
+            }
+            else {
+                resultado.setText(resultado.text.toString() + "tan(")
+            }
+        }
+
+        botonExp2.setOnClickListener{
+
+            if(resultado.text.toString() == "0"){
+                resultado.setText("^2")
+            }
+            else {
+                resultado.setText(resultado.text.toString() + "^2")
+            }
+        }
+
+        botonExp.setOnClickListener{
+
+            if(resultado.text.toString() == "0"){
+                resultado.setText("^")
+            }
+            else {
+                resultado.setText(resultado.text.toString() + "^")
+            }
+        }
+
+        
     }
 }
